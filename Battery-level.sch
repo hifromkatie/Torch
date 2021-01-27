@@ -1,0 +1,695 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+BATT #PWR026
+U 1 1 5FD35530
+P 850 7100
+F 0 "#PWR026" H 850 6950 50  0001 C CNN
+F 1 "+BATT" H 865 7273 50  0000 C CNN
+F 2 "" H 850 7100 50  0001 C CNN
+F 3 "" H 850 7100 50  0001 C CNN
+	1    850  7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5FD357EC
+P 1300 3350
+F 0 "#PWR027" H 1300 3100 50  0001 C CNN
+F 1 "GND" H 1305 3177 50  0000 C CNN
+F 2 "" H 1300 3350 50  0001 C CNN
+F 3 "" H 1300 3350 50  0001 C CNN
+	1    1300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5FD38C45
+P 1450 6900
+F 0 "J1" V 1388 6712 50  0000 R CNN
+F 1 "Conn_01x02_Female" V 1297 6712 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1450 6900 50  0001 C CNN
+F 3 "~" H 1450 6900 50  0001 C CNN
+F 4 "1697903" H 1450 6900 50  0001 C CNN "Farnell"
+	1    1450 6900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  7100 850  7250
+Wire Wire Line
+	850  7250 1450 7250
+Wire Wire Line
+	1450 7100 1450 7250
+$Comp
+L Device:R R23
+U 1 1 5FD3BFA8
+P 1300 1950
+F 0 "R23" H 1370 1996 50  0000 L CNN
+F 1 "3k" H 1370 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 1950 50  0001 C CNN
+F 3 "~" H 1300 1950 50  0001 C CNN
+F 4 "2447648" H 1300 1950 50  0001 C CNN "Farnell"
+	1    1300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 5FD3C3D9
+P 1300 2600
+F 0 "R24" H 1370 2646 50  0000 L CNN
+F 1 "1k" H 1370 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 2600 50  0001 C CNN
+F 3 "~" H 1300 2600 50  0001 C CNN
+F 4 "1738959" H 1300 2600 50  0001 C CNN "Farnell"
+	1    1300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3350 1300 2750
+$Comp
+L Device:R R27
+U 1 1 5FD40C93
+P 2850 1700
+F 0 "R27" H 2920 1746 50  0000 L CNN
+F 1 "16k" H 2920 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2780 1700 50  0001 C CNN
+F 3 "~" H 2850 1700 50  0001 C CNN
+F 4 "2447578" H 2850 1700 50  0001 C CNN "Farnell"
+	1    2850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 5FD41218
+P 2850 2700
+F 0 "R28" H 2920 2746 50  0000 L CNN
+F 1 "51k" H 2920 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2780 2700 50  0001 C CNN
+F 3 "~" H 2850 2700 50  0001 C CNN
+F 4 "2447680" H 2850 2700 50  0001 C CNN "Farnell"
+	1    2850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5FD421F9
+P 2850 3100
+F 0 "#PWR030" H 2850 2850 50  0001 C CNN
+F 1 "GND" H 2855 2927 50  0000 C CNN
+F 2 "" H 2850 3100 50  0001 C CNN
+F 3 "" H 2850 3100 50  0001 C CNN
+	1    2850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR029
+U 1 1 5FD42D28
+P 2850 800
+F 0 "#PWR029" H 2850 650 50  0001 C CNN
+F 1 "+5V" H 2865 973 50  0000 C CNN
+F 2 "" H 2850 800 50  0001 C CNN
+F 3 "" H 2850 800 50  0001 C CNN
+	1    2850 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 800  2850 850 
+$Comp
+L Device:C C21
+U 1 1 5FD454E0
+P 4250 6850
+F 0 "C21" H 4365 6896 50  0000 L CNN
+F 1 "0.33u" H 4365 6805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4288 6700 50  0001 C CNN
+F 3 "~" H 4250 6850 50  0001 C CNN
+F 4 "2070476" H 4250 6850 50  0001 C CNN "Farnell"
+	1    4250 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5FD45A06
+P 5500 6850
+F 0 "C22" H 5615 6896 50  0000 L CNN
+F 1 "0.1u" H 5615 6805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5538 6700 50  0001 C CNN
+F 3 "~" H 5500 6850 50  0001 C CNN
+F 4 "1759265" H 5500 6850 50  0001 C CNN "Farnell"
+	1    5500 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 6600 4250 6600
+Wire Wire Line
+	4250 6600 4250 6700
+Wire Wire Line
+	5250 6600 5500 6600
+Wire Wire Line
+	5500 6600 5500 6700
+Wire Wire Line
+	4250 7000 4250 7150
+Wire Wire Line
+	4250 7150 4950 7150
+Wire Wire Line
+	5500 7150 5500 7000
+Wire Wire Line
+	4950 6900 4950 7150
+Connection ~ 4950 7150
+$Comp
+L power:GND #PWR034
+U 1 1 5FD46B4E
+P 5150 7500
+F 0 "#PWR034" H 5150 7250 50  0001 C CNN
+F 1 "GND" H 5155 7327 50  0000 C CNN
+F 2 "" H 5150 7500 50  0001 C CNN
+F 3 "" H 5150 7500 50  0001 C CNN
+	1    5150 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 7500 5150 7150
+Wire Wire Line
+	4950 7150 5150 7150
+Connection ~ 5150 7150
+Wire Wire Line
+	5150 7150 5500 7150
+Wire Wire Line
+	1550 7450 1550 7100
+$Comp
+L power:+5V #PWR037
+U 1 1 5FD497CC
+P 6150 6550
+F 0 "#PWR037" H 6150 6400 50  0001 C CNN
+F 1 "+5V" H 6165 6723 50  0000 C CNN
+F 2 "" H 6150 6550 50  0001 C CNN
+F 3 "" H 6150 6550 50  0001 C CNN
+	1    6150 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 6550 6150 6600
+Wire Wire Line
+	6150 6600 5500 6600
+Connection ~ 5500 6600
+Wire Wire Line
+	1300 950  1300 1800
+$Comp
+L Device:R R31
+U 1 1 5FD5630D
+P 4200 1100
+F 0 "R31" H 4270 1146 50  0000 L CNN
+F 1 "1k" H 4270 1055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 1100 50  0001 C CNN
+F 3 "~" H 4200 1100 50  0001 C CNN
+F 4 "1738959" H 4200 1100 50  0001 C CNN "Farnell"
+	1    4200 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 950  4200 850 
+Wire Wire Line
+	4200 850  2850 850 
+Connection ~ 2850 850 
+Wire Wire Line
+	2850 850  2850 1550
+Wire Wire Line
+	2850 2850 2850 3100
+$Comp
+L Device:R R35
+U 1 1 5FD6B21A
+P 5400 1950
+F 0 "R35" H 5470 1996 50  0000 L CNN
+F 1 "39k" H 5470 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5330 1950 50  0001 C CNN
+F 3 "~" H 5400 1950 50  0001 C CNN
+F 4 "2447646" H 5400 1950 50  0001 C CNN "Farnell"
+	1    5400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 5FD6B220
+P 5400 2950
+F 0 "R36" H 5470 2996 50  0000 L CNN
+F 1 "100k" H 5470 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5330 2950 50  0001 C CNN
+F 3 "~" H 5400 2950 50  0001 C CNN
+F 4 "2694097" H 5400 2950 50  0001 C CNN "Farnell"
+	1    5400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5FD6B226
+P 5400 3350
+F 0 "#PWR036" H 5400 3100 50  0001 C CNN
+F 1 "GND" H 5405 3177 50  0000 C CNN
+F 2 "" H 5400 3350 50  0001 C CNN
+F 3 "" H 5400 3350 50  0001 C CNN
+	1    5400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR035
+U 1 1 5FD6B230
+P 5400 1050
+F 0 "#PWR035" H 5400 900 50  0001 C CNN
+F 1 "+5V" H 5415 1223 50  0000 C CNN
+F 2 "" H 5400 1050 50  0001 C CNN
+F 3 "" H 5400 1050 50  0001 C CNN
+	1    5400 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R37
+U 1 1 5FD6B23A
+P 10450 1350
+F 0 "R37" H 10520 1396 50  0000 L CNN
+F 1 "1k" H 10520 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10380 1350 50  0001 C CNN
+F 3 "~" H 10450 1350 50  0001 C CNN
+F 4 "1738959" H 10450 1350 50  0001 C CNN "Farnell"
+	1    10450 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 1200 10450 1100
+Wire Wire Line
+	10450 1100 9100 1100
+Wire Wire Line
+	10450 1500 10450 1800
+Wire Wire Line
+	5400 3100 5400 3350
+$Comp
+L Device:R R40
+U 1 1 5FD6DD6C
+P 9100 1950
+F 0 "R40" H 9170 1996 50  0000 L CNN
+F 1 "24k" H 9170 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9030 1950 50  0001 C CNN
+F 3 "~" H 9100 1950 50  0001 C CNN
+F 4 "2447613" H 9100 1950 50  0001 C CNN "Farnell"
+	1    9100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R41
+U 1 1 5FD6DD72
+P 9100 2950
+F 0 "R41" H 9170 2996 50  0000 L CNN
+F 1 "51k" H 9170 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9030 2950 50  0001 C CNN
+F 3 "~" H 9100 2950 50  0001 C CNN
+F 4 "2447680" H 9100 2950 50  0001 C CNN "Farnell"
+	1    9100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR040
+U 1 1 5FD6DD78
+P 9100 3350
+F 0 "#PWR040" H 9100 3100 50  0001 C CNN
+F 1 "GND" H 9105 3177 50  0000 C CNN
+F 2 "" H 9100 3350 50  0001 C CNN
+F 3 "" H 9100 3350 50  0001 C CNN
+	1    9100 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR039
+U 1 1 5FD6DD82
+P 9100 1050
+F 0 "#PWR039" H 9100 900 50  0001 C CNN
+F 1 "+5V" H 9115 1223 50  0000 C CNN
+F 2 "" H 9100 1050 50  0001 C CNN
+F 3 "" H 9100 1050 50  0001 C CNN
+	1    9100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 5FD6DD8C
+P 3050 4150
+F 0 "R42" H 3120 4196 50  0000 L CNN
+F 1 "1k" H 3120 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2980 4150 50  0001 C CNN
+F 3 "~" H 3050 4150 50  0001 C CNN
+F 4 "1738959" H 3050 4150 50  0001 C CNN "Farnell"
+	1    3050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4000 3050 3900
+Wire Wire Line
+	3050 3900 1700 3900
+Wire Wire Line
+	3050 4300 3050 4600
+Wire Wire Line
+	9100 3100 9100 3350
+$Comp
+L Device:R R29
+U 1 1 5FD96A8B
+P 1700 4750
+F 0 "R29" H 1770 4796 50  0000 L CNN
+F 1 "62k" H 1770 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1630 4750 50  0001 C CNN
+F 3 "~" H 1700 4750 50  0001 C CNN
+F 4 "2447701" H 1700 4750 50  0001 C CNN "Farnell"
+	1    1700 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 5FD96A91
+P 1700 5750
+F 0 "R30" H 1770 5796 50  0000 L CNN
+F 1 "110k" H 1770 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1630 5750 50  0001 C CNN
+F 3 "~" H 1700 5750 50  0001 C CNN
+F 4 "2447557" H 1700 5750 50  0001 C CNN "Farnell"
+	1    1700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR032
+U 1 1 5FD96A97
+P 1700 6150
+F 0 "#PWR032" H 1700 5900 50  0001 C CNN
+F 1 "GND" H 1705 5977 50  0000 C CNN
+F 2 "" H 1700 6150 50  0001 C CNN
+F 3 "" H 1700 6150 50  0001 C CNN
+	1    1700 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR031
+U 1 1 5FD96AA1
+P 1700 3850
+F 0 "#PWR031" H 1700 3700 50  0001 C CNN
+F 1 "+5V" H 1715 4023 50  0000 C CNN
+F 2 "" H 1700 3850 50  0001 C CNN
+F 3 "" H 1700 3850 50  0001 C CNN
+	1    1700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 5FD96AAB
+P 6750 1350
+F 0 "R32" H 6820 1396 50  0000 L CNN
+F 1 "1k" H 6820 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6680 1350 50  0001 C CNN
+F 3 "~" H 6750 1350 50  0001 C CNN
+F 4 "1738959" H 6750 1350 50  0001 C CNN "Farnell"
+	1    6750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1200 6750 1100
+Wire Wire Line
+	6750 1100 5400 1100
+Wire Wire Line
+	1700 5900 1700 6150
+Wire Wire Line
+	2600 5250 3050 5250
+Wire Wire Line
+	3750 2200 4200 2200
+Wire Wire Line
+	6300 2450 6750 2450
+Wire Wire Line
+	10000 2450 10450 2450
+$Comp
+L Comparator:LM2901 U2
+U 1 1 5FDD00F6
+P 3450 2200
+F 0 "U2" H 3450 2567 50  0000 C CNN
+F 1 "LM2901" H 3450 2476 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3400 2300 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm2901.pdf" H 3500 2400 50  0001 C CNN
+F 4 "1648673" H 3450 2200 50  0001 C CNN "Farnell"
+	1    3450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM2901 U2
+U 2 1 5FDD2710
+P 6000 2450
+F 0 "U2" H 6000 2817 50  0000 C CNN
+F 1 "LM2901" H 6000 2726 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5950 2550 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm2901.pdf" H 6050 2650 50  0001 C CNN
+F 4 "1648673" H 6000 2450 50  0001 C CNN "Farnell"
+	2    6000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM2901 U2
+U 3 1 5FDD3D3E
+P 9700 2450
+F 0 "U2" H 9700 2817 50  0000 C CNN
+F 1 "LM2901" H 9700 2726 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9650 2550 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm2901.pdf" H 9750 2650 50  0001 C CNN
+F 4 "1648673" H 9700 2450 50  0001 C CNN "Farnell"
+	3    9700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM2901 U2
+U 4 1 5FDD5F1C
+P 2300 5250
+F 0 "U2" H 2300 5617 50  0000 C CNN
+F 1 "LM2901" H 2300 5526 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2250 5350 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm2901.pdf" H 2350 5450 50  0001 C CNN
+F 4 "1648673" H 2300 5250 50  0001 C CNN "Farnell"
+	4    2300 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM2901 U2
+U 5 1 5FDD85B0
+P 4900 4650
+F 0 "U2" H 4858 4696 50  0000 L CNN
+F 1 "LM2901" H 4858 4605 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4850 4750 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm2901.pdf" H 4950 4850 50  0001 C CNN
+F 4 "1648673" H 4900 4650 50  0001 C CNN "Farnell"
+	5    4900 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR041
+U 1 1 5FDE3631
+P 4800 4200
+F 0 "#PWR041" H 4800 4050 50  0001 C CNN
+F 1 "+5V" H 4815 4373 50  0000 C CNN
+F 2 "" H 4800 4200 50  0001 C CNN
+F 3 "" H 4800 4200 50  0001 C CNN
+	1    4800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4200 4800 4300
+$Comp
+L power:GND #PWR042
+U 1 1 5FDE6336
+P 4800 5100
+F 0 "#PWR042" H 4800 4850 50  0001 C CNN
+F 1 "GND" H 4805 4927 50  0000 C CNN
+F 2 "" H 4800 5100 50  0001 C CNN
+F 3 "" H 4800 5100 50  0001 C CNN
+	1    4800 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5100 4800 5050
+$Comp
+L Device:C C23
+U 1 1 5FDE8FA7
+P 5600 4700
+F 0 "C23" H 5715 4746 50  0000 L CNN
+F 1 "0.1u" H 5715 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5638 4550 50  0001 C CNN
+F 3 "~" H 5600 4700 50  0001 C CNN
+F 4 "1759265" H 5600 4700 50  0001 C CNN "Farnell"
+	1    5600 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4550 5600 4300
+Wire Wire Line
+	5600 4300 4800 4300
+Connection ~ 4800 4300
+Wire Wire Line
+	4800 4300 4800 4350
+Wire Wire Line
+	5600 4850 5600 5050
+Wire Wire Line
+	5600 5050 4800 5050
+Connection ~ 4800 5050
+Wire Wire Line
+	4800 5050 4800 4950
+$Comp
+L Regulator_Linear:L7805 U3
+U 1 1 5FDF4C74
+P 4950 6600
+F 0 "U3" H 4950 6842 50  0000 C CNN
+F 1 "L7805" H 4950 6751 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4975 6450 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 4950 6550 50  0001 C CNN
+F 4 "1467758" H 4950 6600 50  0001 C CNN "Farnell"
+	1    4950 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2100 1300 2300
+Connection ~ 1300 2300
+Wire Wire Line
+	1300 2300 1300 2450
+Wire Wire Line
+	1700 3850 1700 3900
+Connection ~ 1700 3900
+Wire Wire Line
+	1700 3900 1700 4600
+Wire Wire Line
+	9100 1050 9100 1100
+Connection ~ 9100 1100
+Wire Wire Line
+	9100 1100 9100 1800
+Wire Wire Line
+	5400 1050 5400 1100
+Connection ~ 5400 1100
+Wire Wire Line
+	5400 1100 5400 1800
+Wire Wire Line
+	2850 1850 2850 2100
+Wire Wire Line
+	5400 2100 5400 2350
+Wire Wire Line
+	9100 2100 9100 2350
+Text Label 1900 2300 0    50   ~ 0
+QBat
+Wire Wire Line
+	1300 2300 3150 2300
+Text Label 4900 2550 0    50   ~ 0
+QBat
+Text Label 8500 2550 0    50   ~ 0
+QBat
+Text Label 1150 5350 0    50   ~ 0
+QBat
+Wire Wire Line
+	1150 5350 2000 5350
+Wire Wire Line
+	4900 2550 5700 2550
+Wire Wire Line
+	8500 2550 9400 2550
+Wire Wire Line
+	1550 7450 2000 7450
+Text Label 2000 7450 2    50   ~ 0
+CheckBat
+Text Notes 1200 6800 0    50   ~ 0
+Pushbutton check battery
+Text Label 1300 950  3    50   ~ 0
+CheckBat
+Wire Wire Line
+	4250 6600 3750 6600
+Connection ~ 4250 6600
+Text Label 3750 6600 0    50   ~ 0
+CheckBat
+Wire Wire Line
+	3150 2100 2850 2100
+Connection ~ 2850 2100
+Wire Wire Line
+	2850 2100 2850 2550
+Wire Wire Line
+	2000 5150 1700 5150
+Wire Wire Line
+	1700 4900 1700 5150
+Connection ~ 1700 5150
+Wire Wire Line
+	1700 5150 1700 5600
+Wire Wire Line
+	5700 2350 5400 2350
+Connection ~ 5400 2350
+Wire Wire Line
+	5400 2350 5400 2800
+Wire Wire Line
+	9400 2350 9100 2350
+Connection ~ 9100 2350
+Wire Wire Line
+	9100 2350 9100 2800
+$Comp
+L Connector:Conn_01x02_Female J16
+U 1 1 5FEFA4D9
+P 4400 1650
+F 0 "J16" H 4428 1626 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4428 1535 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4400 1650 50  0001 C CNN
+F 3 "~" H 4400 1650 50  0001 C CNN
+F 4 "1697903" H 4400 1650 50  0001 C CNN "Farnell"
+	1    4400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J17
+U 1 1 5FEFAB5F
+P 6950 1900
+F 0 "J17" H 6978 1876 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6978 1785 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 6950 1900 50  0001 C CNN
+F 3 "~" H 6950 1900 50  0001 C CNN
+F 4 "1697903" H 6950 1900 50  0001 C CNN "Farnell"
+	1    6950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J18
+U 1 1 5FEFB113
+P 10650 1800
+F 0 "J18" H 10678 1776 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10678 1685 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 10650 1800 50  0001 C CNN
+F 3 "~" H 10650 1800 50  0001 C CNN
+F 4 "1697903" H 10650 1800 50  0001 C CNN "Farnell"
+	1    10650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J15
+U 1 1 5FEFB78A
+P 3250 4600
+F 0 "J15" H 3278 4576 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 3278 4485 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 3250 4600 50  0001 C CNN
+F 3 "~" H 3250 4600 50  0001 C CNN
+F 4 "1697903" H 3250 4600 50  0001 C CNN "Farnell"
+	1    3250 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1250 4200 1650
+Wire Wire Line
+	4200 1750 4200 2200
+Wire Wire Line
+	6750 1500 6750 1900
+Wire Wire Line
+	6750 2000 6750 2450
+Wire Wire Line
+	10450 1900 10450 2450
+Wire Wire Line
+	3050 4700 3050 5250
+$EndSCHEMATC
